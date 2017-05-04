@@ -1,0 +1,41 @@
+html{
+cursor: default;
+cursor: url("./images/cursor.cur") 30 30,default;
+}
+
+a, a:hover, a:link, input, button, button:hover, button:active{
+cursor: url("./images/cursor.cur") 30 30,default;
+}
+
+body{
+background: url("./images/bg2.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.logo{
+//background: url("./images/header.png");
+width: 57px;
+height: 84px;
+margin: 0 auto;
+margin-top: 200px;
+margin-bottom: 30px;
+overflow: hidden;
+transition-duration: 0.8s;
+transition-property: transform;
+}
+
+.logo:hover {
+//background: url("./images/pp.png");
+width: 118px;
+height: 84px;
+transform: rotate(900deg);
+-webkit-transform: rotate(900deg);
+}
+
+a{
+width: 100%;
+margin-top: 10px;
+}

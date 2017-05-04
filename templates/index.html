@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>New tab</title>
+        <meta name="author" content="AiAe | Daniel Dimitrov">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{url}}static/bootstrap.min.css">
+        <link rel="stylesheet" href="{{url}}static/font-awesome.min.css">
+        <link rel="stylesheet" href="{{url}}static/newpage.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo"></div>
+            <div class="col-md-12">
+                <div class="row">
+                {% for page in pages %}
+                    <div class="col-xs-2">
+                        <a href='{{ page["url"] }}' class="btn btn-info"><i class='fa {{ page["icon"] }}'></i><br>{{ page["name"] }}</a>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
